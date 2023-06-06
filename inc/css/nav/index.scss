@@ -10,7 +10,7 @@ header{
     justify-content: center;
     height: 150px;
     user-select: none;
-    a{
+    h1{
         font-family: "phasmo";
         font-display: "sans-serif";
         font-weight: 100;
@@ -23,12 +23,14 @@ nav{
     border-top: 1px solid var(--vertfluo);
     border-bottom: 1px solid var(--vertfluo);
     height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     ul{
         display: flex;
         list-style-type: none;
-        align-items: center;
-        justify-content: center;
-    }   
+        left: 0px;
+    }
     li{
         padding-left: 50px;
         padding-right: 50px;
@@ -46,13 +48,13 @@ nav{
         padding: 10px 30px;
         margin: 0 9px;
         -webkit-box-reflect: below 1px linear-gradient(transparent);
-    }   
-    a:hover::before{
+       
+    &:hover::before{
         width: 100%;
         height: 100%;
         transition-delay: 0.1s;
     }   
-    a:before{
+    &:before{
         content: '';
         position: absolute;
         top: 0;
@@ -64,12 +66,12 @@ nav{
         transition: 0.1s;
         transition-delay: 0.1s;
     }   
-    a:hover:after{
+    &:hover:after{
         width: 100%;
         height: 100%;
         transition-delay: 0.1s;
-    }   
-    a:after{
+    }
+    &:after{
         content: '';
         position: absolute;
         bottom: 0;
@@ -80,12 +82,31 @@ nav{
         border-right: 2px solid var(--vertfluo);
         transition: 0.1s;
         transition-delay: 0.1s;
-    }   
-    a:hover{
+    }
+    &:hover{
         color: #111;
         background: var(--vertfluo);
         box-shadow: 0 0 50px var(--vertfluo);
         transition-delay: 0.3s;
+    }
+}
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0000005e;
+        color: white;
+        height: 45px;
+        padding: 15px;
+        margin-right: 50px;
+        border: none;
+        transition: 0.3s;
+        &:hover{
+            color: #111;
+            background: var(--vertfluo);
+            box-shadow: 0 0 50px var(--vertfluo);
+            transition: 0.3s;
+        }
     }
 }
 @media screen and (max-width: 1265px) {

@@ -8,4 +8,7 @@
         <li><a href="#">Entités</a></li>
         <li><a href="#">Les trophées</a></li>
     </ul>
+    <button>
+        Connectez-vous !
+    </button>
 </nav>

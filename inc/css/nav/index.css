@@ -13,7 +13,7 @@ header {
      -moz-user-select: none;
           user-select: none;
 }
-header a {
+header h1 {
   font-family: "phasmo";
   font-display: "sans-serif";
   font-weight: 100;
@@ -26,12 +26,14 @@ nav {
   border-top: 1px solid var(--vertfluo);
   border-bottom: 1px solid var(--vertfluo);
   height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 nav ul {
   display: flex;
   list-style-type: none;
-  align-items: center;
-  justify-content: center;
+  left: 0px;
 }
 nav li {
   padding-left: 50px;
@@ -90,6 +92,24 @@ nav a:hover {
   background: var(--vertfluo);
   box-shadow: 0 0 50px var(--vertfluo);
   transition-delay: 0.3s;
+}
+nav button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.368627451);
+  color: white;
+  height: 45px;
+  padding: 15px;
+  margin-right: 50px;
+  border: none;
+  transition: 0.3s;
+}
+nav button:hover {
+  color: #111;
+  background: var(--vertfluo);
+  box-shadow: 0 0 50px var(--vertfluo);
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 1265px) {
