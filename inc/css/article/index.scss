@@ -1,0 +1,34 @@
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/picture/prison.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.firstpage{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 75vw;
+    height: 800px;
+    background-color: rgba(65, 65, 65, 0.35);
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    p{
+        font-size: 1.3em;
+        padding-left: 60px;
+        padding-right: 60px;
+        color: white;
+    }
+    .pun{
+        padding-top: 60px;
+    }
+    .pdeux{
+        padding-bottom: 60px;
+    }
+}
