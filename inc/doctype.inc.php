@@ -6,5 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phasmophobia</title>
     <link rel="stylesheet" href="inc/css/index.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/ccbb16c2ce.css" crossorigin="anonymous">
 </head>
 <body>

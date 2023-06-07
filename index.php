@@ -22,6 +22,9 @@ require_once('inc/doctype.inc.php');
         </p>
     </button>
 </nav>
+<div id="burger-menu">
+        <span></span>
+</div>
 <main>
     <article class="firstPage">
         <p>Phasmophobia est un jeu vidéo hilarant qui vous transforme en véritable chasseur de fantômes... ou du moins, en personne qui crie et panique dès qu'une porte grince !</p>
@@ -37,5 +40,6 @@ require_once('inc/doctype.inc.php');
         <a class="twitter-timeline" href="https://twitter.com/KineticGame?ref_src=twsrc%5Etfw" data-height="800">Tweets by KineticGame </a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </section>
+<script src="https://kit.fontawesome.com/ccbb16c2ce.js" crossorigin="anonymous"></script>
 <?php
 require_once('inc/scripts.inc.php');

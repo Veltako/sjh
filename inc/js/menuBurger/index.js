@@ -1,8 +1,8 @@
-let menuButton = document.querySelector('#menu-button');
-let menu = document.querySelector('#menu');
 
-// show or hide
-menuButton.addEventListener('click',function(){
-  menu.classList.toggle('show-menu');
-  menuButton.classList.toggle('close');
+let burgerMenu = document.getElementById('burger-menu');
+let overlay = document.getElementById('menu');
+
+burgerMenu.addEventListener('click', function() {
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
 });
