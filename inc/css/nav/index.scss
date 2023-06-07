@@ -11,10 +11,11 @@ header{
     height: 150px;
     user-select: none;
     h1{
+        cursor: pointer;
         font-family: "phasmo";
         font-display: "sans-serif";
         font-weight: 100;
-        font-size: 10vh;
+        font-size: 110px;
         color: white;
     }
 }
@@ -33,13 +34,20 @@ nav{
     }
     li{
         padding-left: 50px;
-        padding-right: 50px;
         padding-top: 25px;
         padding-bottom: 25px;
+        padding-right: 0px;
+    }
+    .active{
+        color: #111;
+        background: var(--vertfluo);
+        box-shadow: 0 0 50px var(--vertfluo);
     }
     a{
+        user-select: none;
         font-family: "pfd";
         font-style: italic;
+        font-size: 18px;
         text-decoration: none;
         color: white;
         transition: 0.1s;
@@ -101,18 +109,50 @@ nav{
         margin-right: 50px;
         border: none;
         transition: 0.3s;
+        cursor: pointer;
         &:hover{
             color: #111;
             background: var(--vertfluo);
             box-shadow: 0 0 50px var(--vertfluo);
             transition: 0.3s;
         }
+        p{
+            user-select: none;
+            font-family: "phasmo";
+            font-size: 24px;
+            font-weight: 100;
+        }
     }
 }
 @media screen and (max-width: 1265px) {
     nav{
+        height: 75px;
+        justify-content: center;
+        flex-direction: column;
         ul{
             display: none;
+            flex-direction: column;
+            padding: 0;
+            li{
+                display: flex;
+                justify-content: center;
+                padding-left: 0;
+                padding-bottom: 50px;
+                &:first-child{
+                    padding-top: 15px;
+                }
+            }
+        }
+        button{
+            display: none;
+            margin: 0;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    header{
+        h1{
+            font-size: 58px;
         }
     }
 }

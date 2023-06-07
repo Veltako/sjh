@@ -1,35 +1,41 @@
 main {
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(../../assets/picture/prison.png);
-  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--vertfluo);
 }
-
-.firstpage {
+main .firstPage {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   width: 75vw;
-  height: 800px;
   background-color: rgba(65, 65, 65, 0.35);
   border-radius: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.firstpage p {
-  font-size: 1.3em;
-  padding-left: 60px;
-  padding-right: 60px;
+main .firstPage p {
+  font-size: 20px;
+  padding: 60px 60px 0px 60px;
   color: white;
 }
-.firstpage .pun {
-  padding-top: 60px;
-}
-.firstpage .pdeux {
+main .firstPage .pDeux {
   padding-bottom: 60px;
+}
+
+.twitter {
+  background-color: #242424;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.twitter .EmbeddedTwitter {
+  margin: 60px;
+  width: 75%;
 }/*# sourceMappingURL=index.css.map */
