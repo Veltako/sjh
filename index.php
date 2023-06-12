@@ -22,9 +22,6 @@ require_once('inc/doctype.inc.php');
         </p>
     </button>
 </nav>
-<div id="burger-menu">
-        <span></span>
-</div>
 <main>
     <article class="firstPage">
         <p>Phasmophobia est un jeu vidéo hilarant qui vous transforme en véritable chasseur de fantômes... ou du moins, en personne qui crie et panique dès qu'une porte grince !</p>
